@@ -4,7 +4,6 @@ Ce projet implémente un pipeline complet pour collecter, stocker et analyser de
 
 ## Architecture du Projet
 
-![Architecture du Pipeline](https://i.imgur.com/z7W5rH6.png)
 ┌─────────────┐    ┌────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Python Log  │ →  │ Flume  │ →  │   HDFS     │ →  │ MapReduce  │ →  │    Hive     │
 │ Generator   │    │ Agent  │    │ (Raw Logs) │    │ (Processing)│    │ (Analysis)  │
