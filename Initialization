@@ -1,0 +1,119 @@
+beeline> schemaTool completed
+. . . .> 📂 Vérification des données HDFS...
+. . . .> 25/05/14 11:08:19 WARN util.NativeCodeLoader: Unable to load native-had oop library for your platform... using builtin-java classes where applicable
+. . . .> Found 2 items
+. . . .> -rw-r--r--   1 sami supergroup          0 2025-05-14 11:06 /user/sami/l ogs/processed/20250514_110555/_SUCCESS
+. . . .> -rw-r--r--   1 sami supergroup        743 2025-05-14 11:06 /user/sami/l ogs/processed/20250514_110555/part-r-00000
+. . . .> 25/05/14 11:08:21 WARN util.NativeCodeLoader: Unable to load native-had oop library for your platform... using builtin-java classes where applicable
+. . . .> endpoint:/11
+. . . .> endpoint:/about9
+. . . .> endpoint:/blog14
+. . . .> endpoint:/contact10
+. . . .> endpoint:/dashboard9
+. . . .> 💾 Création des tables Hive...
+. . . .> 
+. . . .> Logging initialized using configuration in jar:file:/home/sami/opt/hive /lib/hive-common-2.3.5.jar!/hive-log4j2.properties Async: true
+. . . .> OK
+. . . .> Time taken: 7.736 seconds
+. . . .> OK
+. . . .> Time taken: 0.032 seconds
+. . . .> OK
+. . . .> Time taken: 0.593 seconds
+. . . .> WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in  the future versions. Consider using a different execution engine (i.e. spark, t ez) or using Hive 1.X releases.
+. . . .> Query ID = sami_20250514110838_173787be-7fa8-479f-b128-8f802e1385f3
+. . . .> Total jobs = 1
+. . . .> Launching Job 1 out of 1
+. . . .> Number of reduce tasks determined at compile time: 1
+. . . .> In order to change the average load for a reducer (in bytes):
+. . . .>   set hive.exec.reducers.bytes.per.reducer=<number>
+. . . .> In order to limit the maximum number of reducers:
+. . . .>   set hive.exec.reducers.max=<number>
+. . . .> In order to set a constant number of reducers:
+. . . .>   set mapreduce.job.reduces=<number>
+. . . .> Starting Job = job_1747217004484_0002, Tracking URL = http://sami-Virtu alBox:8088/proxy/application_1747217004484_0002/
+. . . .> Kill Command = /home/sami/opt/hadoop-2.7.3/bin/hadoop job  -kill job_17 47217004484_0002
+. . . .> Hadoop job information for Stage-1: number of mappers: 0; number of red ucers: 1
+. . . .> 2025-05-14 11:08:55,662 Stage-1 map = 0%,  reduce = 0%
+. . . .> 2025-05-14 11:09:05,430 Stage-1 map = 0%,  reduce = 100%, Cumulative CP U 3.27 sec
+. . . .> MapReduce Total cumulative CPU time: 3 seconds 270 msec
+. . . .> Ended Job = job_1747217004484_0002
+. . . .> MapReduce Jobs Launched: 
+. . . .> Stage-Stage-1: Reduce: 1   Cumulative CPU: 3.27 sec   HDFS Read: 3844 H DFS Write: 101 SUCCESS
+. . . .> Total MapReduce CPU Time Spent: 3 seconds 270 msec
+. . . .> OK
+. . . .> 0
+. . . .> Time taken: 29.423 seconds, Fetched: 1 row(s)
+. . . .> 
+. . . .> Logging initialized using configuration in jar:file:/home/sami/opt/hive /lib/hive-common-2.3.5.jar!/hive-log4j2.properties Async: true
+. . . .> OK
+. . . .> Time taken: 6.548 seconds
+. . . .> WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in  the future versions. Consider using a different execution engine (i.e. spark, t ez) or using Hive 1.X releases.
+. . . .> Query ID = sami_20250514110924_2b77f329-e9d4-48da-96aa-887342caba66
+. . . .> Total jobs = 3
+. . . .> Launching Job 1 out of 3
+. . . .> Number of reduce tasks is set to 0 since there's no reduce operator
+. . . .> Starting Job = job_1747217004484_0003, Tracking URL = http://sami-Virtu alBox:8088/proxy/application_1747217004484_0003/
+. . . .> Kill Command = /home/sami/opt/hadoop-2.7.3/bin/hadoop job  -kill job_17 47217004484_0003
+. . . .> Hadoop job information for Stage-1: number of mappers: 0; number of red ucers: 0
+. . . .> 2025-05-14 11:09:36,718 Stage-1 map = 0%,  reduce = 0%
+. . . .> Ended Job = job_1747217004484_0003
+. . . .> Stage-4 is selected by condition resolver.
+. . . .> Stage-3 is filtered out by condition resolver.
+. . . .> Stage-5 is filtered out by condition resolver.
+. . . .> Moving data to directory hdfs://localhost:9000/user/hive/warehouse/log_ analysis.db/.hive-staging_hive_2025-05-14_11-09-24_071_2626089116302437156-1/-ex t-10002
+. . . .> Moving data to directory hdfs://localhost:9000/user/hive/warehouse/log_ analysis.db/endpoint_stats
+. . . .> MapReduce Jobs Launched: 
+. . . .> Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+. . . .> Total MapReduce CPU Time Spent: 0 msec
+. . . .> OK
+. . . .> Time taken: 16.147 seconds
+. . . .> WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in  the future versions. Consider using a different execution engine (i.e. spark, t ez) or using Hive 1.X releases.
+. . . .> Query ID = sami_20250514110940_69070f0f-59c7-44b4-91bb-4d034cdb0226
+. . . .> Total jobs = 3
+. . . .> Launching Job 1 out of 3
+. . . .> Number of reduce tasks is set to 0 since there's no reduce operator
+. . . .> Starting Job = job_1747217004484_0004, Tracking URL = http://sami-Virtu alBox:8088/proxy/application_1747217004484_0004/
+. . . .> Kill Command = /home/sami/opt/hadoop-2.7.3/bin/hadoop job  -kill job_17 47217004484_0004
+. . . .> Hadoop job information for Stage-1: number of mappers: 0; number of red ucers: 0
+. . . .> 2025-05-14 11:09:50,859 Stage-1 map = 0%,  reduce = 0%
+. . . .> Ended Job = job_1747217004484_0004
+. . . .> Stage-4 is selected by condition resolver.
+. . . .> Stage-3 is filtered out by condition resolver.
+. . . .> Stage-5 is filtered out by condition resolver.
+. . . .> Moving data to directory hdfs://localhost:9000/user/hive/warehouse/log_ analysis.db/.hive-staging_hive_2025-05-14_11-09-40_247_816752185416950786-1/-ext -10002
+. . . .> Moving data to directory hdfs://localhost:9000/user/hive/warehouse/log_ analysis.db/status_stats
+. . . .> MapReduce Jobs Launched: 
+. . . .> Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+. . . .> Total MapReduce CPU Time Spent: 0 msec
+. . . .> OK
+. . . .> Time taken: 13.725 seconds
+. . . .> WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in  the future versions. Consider using a different execution engine (i.e. spark, t ez) or using Hive 1.X releases.
+. . . .> Query ID = sami_20250514110953_dfa752fe-8f50-4e02-9604-ff22b9063566
+. . . .> Total jobs = 3
+. . . .> Launching Job 1 out of 3
+. . . .> Number of reduce tasks is set to 0 since there's no reduce operator
+. . . .> Starting Job = job_1747217004484_0005, Tracking URL = http://sami-Virtu alBox:8088/proxy/application_1747217004484_0005/
+. . . .> Kill Command = /home/sami/opt/hadoop-2.7.3/bin/hadoop job  -kill job_17 47217004484_0005
+. . . .> Hadoop job information for Stage-1: number of mappers: 0; number of red ucers: 0
+. . . .> 2025-05-14 11:10:05,528 Stage-1 map = 0%,  reduce = 0%
+. . . .> Ended Job = job_1747217004484_0005
+. . . .> Stage-4 is selected by condition resolver.
+. . . .> Stage-3 is filtered out by condition resolver.
+. . . .> Stage-5 is filtered out by condition resolver.
+. . . .> Moving data to directory hdfs://localhost:9000/user/hive/warehouse/log_ analysis.db/.hive-staging_hive_2025-05-14_11-09-53_981_6202175540409064640-1/-ex t-10002
+. . . .> Moving data to directory hdfs://localhost:9000/user/hive/warehouse/log_ analysis.db/ip_stats
+. . . .> MapReduce Jobs Launched: 
+. . . .> Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+. . . .> Total MapReduce CPU Time Spent: 0 msec
+. . . .> OK
+. . . .> Time taken: 14.209 seconds
+. . . .> OK
+. . . .> endpoint_stats
+. . . .> ip_stats
+. . . .> raw_logs
+. . . .> status_stats
+. . . .> Time taken: 0.09 seconds, Fetched: 4 row(s)
+. . . .> OK
+. . . .> Time taken: 0.25 seconds
+. . . .> ✅ Configuration terminée avec succès! Les tables sont prêtes.
+. . . .> 

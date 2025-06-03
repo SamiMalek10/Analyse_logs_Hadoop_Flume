@@ -1,0 +1,30 @@
+# 
+Logging initialized using configuration in jar:file:/home/sami/opt/hive/lib/hive-common-2.3.5.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.333 seconds
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = sami_20250513193415_8b4eca5d-a991-4c60-a28a-497af932ee39
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1747146609447_0018, Tracking URL = http://sami-VirtualBox:8088/proxy/application_1747146609447_0018/
+Kill Command = /home/sami/opt/hadoop-2.7.3/bin/hadoop job  -kill job_1747146609447_0018
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2025-05-13 19:34:28,236 Stage-1 map = 0%,  reduce = 0%
+2025-05-13 19:34:36,673 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 5.36 sec
+2025-05-13 19:34:44,466 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 9.34 sec
+MapReduce Total cumulative CPU time: 9 seconds 340 msec
+Ended Job = job_1747146609447_0018
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 9.34 sec   HDFS Read: 8250 HDFS Write: 123 SUCCESS
+Total MapReduce CPU Time Spent: 9 seconds 340 msec
+OK
+404	8
+500	2
+Time taken: 30.775 seconds, Fetched: 2 row(s)
