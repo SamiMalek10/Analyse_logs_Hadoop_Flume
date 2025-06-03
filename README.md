@@ -181,3 +181,53 @@ Pour arrêter tous les services en cours d'exécution :
 - Intégrez Spark pour des analyses plus rapides
 - Ajoutez un tableau de bord de visualisation avec des outils comme Superset
 - Implémentez la détection d'anomalies en temps réel
+
+# English Short Description :
+##  Key Features
+ - Log Generation: Python-based simulator for realistic web logs.
+ 
+ - Real-time Ingestion: Apache Flume agents to collect and transfer logs to HDFS.
+
+ - Distributed Storage: Hadoop HDFS for fault-tolerant, scalable storage.
+
+ - Batch Processing: MapReduce jobs to parse, filter, and aggregate logs.
+
+ - SQL-like Analysis: Apache Hive for querying log data with familiar syntax.
+
+## Tech Stack
+ - Hadoop (HDFS + MapReduce)
+
+ - Apache Flume (Data ingestion)
+
+ - Apache Hive (Data warehousing)
+
+ - Python (Log simulation)
+
+## Sample Use Cases
+ - Track page visit trends and user behavior.
+
+ - Detect 404 errors or suspicious traffic patterns.
+
+ - Generate daily/weekly reports (e.g., top visited pages).
+
+## Quick Start
+* Prerequisites: Ubuntu VM, Java 8+, 4GB RAM.
+
+## Explore Results
+ - Raw Logs: hadoop fs -cat /user/logs/raw/*
+
+ - Processed Output: hadoop fs -cat /user/logs/processed/*/part-r-00000
+
+ - Hive Queries: Predefined in analyze-logs.hql (e.g., session analysis).
+
+## Future Enhancements
+ - Integrate Spark for real-time analytics.
+
+ - Add Superset/Grafana dashboards.
+
+ - Extend to multi-node clusters.
+
+# Why This Project?
+✔ Hands-on learning for Big Data tools (Hadoop/Flume/Hive).
+✔ Production-ready pipeline with automation scripts.
+✔ Customizable for other log formats (e.g., IoT, APIs).
