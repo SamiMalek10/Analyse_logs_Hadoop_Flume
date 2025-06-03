@@ -3,16 +3,7 @@
 Ce projet implémente un pipeline complet pour collecter, stocker et analyser des données de logs à l'aide de technologies Big Data comme Hadoop, Flume et Hive. Il démontre comment transformer des données non structurées (logs) en informations exploitables.
 
 ## Architecture du Projet
-
-┌─────────────┐    ┌────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│ Python Log  │ →  │ Flume  │ →  │   HDFS     │ →  │ MapReduce  │ →  │    Hive     │
-│ Generator   │    │ Agent  │    │ (Raw Logs) │    │ (Processing)│    │ (Analysis)  │
-└─────────────┘    └────────┘    └─────────────┘    └─────────────┘    └─────────────┘
-                                                                           ↓
-                                                                   ┌─────────────┐
-                                                                   │ Dashboard   │
-                                                                   │ (Optional)  │
-                                                                   └─────────────┘
+[Log Generator] → [Flume] → [HDFS] → [MapReduce] → [Hive] → 📊 [Excel Results]
 
 Le pipeline de données comprend les étapes suivantes :
 1. **Génération de logs** - Simulation de logs d'une application web
